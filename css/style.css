@@ -1,0 +1,112 @@
+body{
+	font-family:Tahoma;
+	font-size:13px;
+	width:1000px;
+	margin:0px auto;
+}
+
+#menu_top{
+	background:#141414;
+	height:40px;
+}
+#banner{
+	height:auto;
+	width:1000px;
+}
+#main #left{
+	width:700px;
+	float:left;
+	min-height:400px;/*Nếu không có min-height thì nó chỉ đủ để chứ nội dung của nó
+	có min-height thì dù k chứa nội dung nó vẫn chiếm height do mình đã đặt*/
+}
+#main #right{
+	width:300px;
+	float:left;
+	min-height:400px;
+}
+#footer{
+	background:#000;
+	width:1000px;
+	height:60px;
+	color:#FFF;
+	text-align:center;
+	line-height:60px; 
+	clear:left;/*vì ở trên mình dùng float: left nên thuộc tính này sẽ bị tràn lên chỗ đã hiển thị ở trên nếu ở trên còn chỗ trống(px đã đặt) để không bị tràn lên và hiển thị đúng vị trí mình muốn thì cùng clear: left (float chiều nào thì clear chiều đó)*/
+}
+#menu_top ul{
+	margin: 0px;
+	padding: 0px;
+}
+/*luôn luôn xét margin và padding = 0px */
+#menu_top ul li{
+	list-style:none;/*xoá đi các icon dấu chấm*/
+	float:left;
+}
+#menu_top ul li a{
+	text-decoration:none;/*xóa dấu gạch chân*/
+	display:block;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	padding:0px 20px 0px 20px;/*giãn cách theo 4 chiều top left bottom right*/
+	border-right:1px solid #ccc;
+}
+#menu_top ul li a.active{
+	background:#1949b5;
+}
+#banner img{
+	width:1000px;
+}
+#main #left ul{
+	margin:0px;
+	padding:0px;
+}
+#main #left ul li{
+	list-style:none;
+	clear:left;
+	border-bottom: 2px solid #ccc;
+	float:left;
+	margin-bottom:20px;
+}
+#main #left ul li img{
+	float: left;
+	height:100px;
+	width:150px;
+	margin-right:10px;
+}
+
+#main #left ul li h2{
+	font-size:14px;
+	margin-top:0px;
+}
+#main{
+	margin-top:10px;
+}
+#main #right .menu_right ul{
+	margin:-15px 0px 0px 0px; 
+	padding:0px;
+	border: 1px solid #ccc;
+}
+#main #right .menu_right ul li{
+	list-style:none;
+}
+#main #right .menu_right h3{
+	background:#194d58 url(../PhotosForProject/iconmenu.png) no-repeat 1px;
+	height:40px;
+	text-indent:45px;
+	line-height:40px;
+	margin-top:0px;
+	font-size:14px;
+	color:#FFF;
+}
+#main #right .menu_right ul li a{
+	display:block;
+	text-decoration:none;/*bo gach chan duoi menu*/
+	line-height:45px;
+	height:40px;
+	border-bottom: 1px solid #ccc;
+	background: url(../PhotosForProject/icontick.png) no-repeat 2px ;
+	text-indent:35px;
+	color: #878787;
+	font-size:14px;
+}
